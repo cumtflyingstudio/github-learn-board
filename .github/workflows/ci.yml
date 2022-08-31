@@ -1,0 +1,45 @@
+name: automerge
+on:
+  pull_request:
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  check_suite:
+    types:
+      - completed
+  status: {}
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: pnpm run intall, build, and test-doc-name
+        run: |
+          cd ./test
+          nci
+          nr test
+
+      - name: automerge
+        uses: 'pascalgn/automerge-action@v0.13.0'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
