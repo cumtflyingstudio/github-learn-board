@@ -1,0 +1,17 @@
+name: Issue Close Require
+
+on:
+  schedule:
+    - cron: '0 0 */7 * *'
+
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: close
+        uses: actions-cool/issues-helper@v1.7
+        with:
+          actions: 'close-issues'
+          inactive-day: 3
+          body: |
+            自动清理不活跃issue
