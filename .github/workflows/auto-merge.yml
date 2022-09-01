@@ -1,21 +1,11 @@
 name: automerge
 on:
-  label:
-    types:
-      - created
-
   pull_request:
+    branches:
+      - main
     types:
-      - labeled
+      - opened
 
-  pull_request_review:
-    types:
-      - submitted
-
-  check_suite:
-    types:
-      - completed
-  status: {}
 jobs:
   automerge:
     runs-on: ubuntu-latest
@@ -38,7 +28,9 @@ jobs:
           nci
           nr test
 
-      - name: automerge
-        uses: 'pascalgn/automerge-action@v0.13.0'
+      - name: auto-merge
+        uses: 'pascalgn/automerge-action@v0.15.3'
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          MERGE_LABELS: ''
+          UPDATE_METHOD: 'rebase'

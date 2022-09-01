@@ -7,7 +7,7 @@
 
 ### 1. 使用 issue
 
-在 issues 里的总签到版里签到 （回复 issue）
+在 issues 里的总签到版里签到 （回复该 issue）
 
 在 issues 里 New issue，选择 打个招呼 label, 提出人生第一个 issue
 
@@ -21,7 +21,7 @@ b. 新建自己的 branch 分支，命名为 "dev\_你的名字"
 
 c. 第一个人新建 1.txt 并写入自己的名字，第二个人新建 2.txt 并写入自己名字，以此类推, 顺序递增，commit 之后提人生中第一个 pull Request
 
-⚠️ 要求：关联 issue
+⚠️ 要求：关联 issue, 使用`#`引用自己打招呼的 issue
 
 d. 之后 ci 后会自动 merge（模拟了 项目 leader 的 review 再 merge）
 
