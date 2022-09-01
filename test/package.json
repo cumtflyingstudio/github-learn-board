@@ -1,0 +1,16 @@
+{
+  "name": "github-learn-board-ci",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^0.22.1",
+    "fast-glob": "^3.2.11"
+  },
+  "keywords": [],
+  "author": "soonIter",
+  "license": "MIT"
+}
