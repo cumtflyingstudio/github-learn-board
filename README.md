@@ -7,7 +7,9 @@
 
 ### 1. 使用 issue
 
-在 issues 里的总签到版里签到 （回复该 issue）
+在 issues 里的总签到板里签到 （回复该 issue）（在最顶部！）
+
+![图片显示不出来，请开加速器，科学上网](./imgs/%E6%80%BB%E7%AD%BE%E5%88%B0%E6%9D%BF.png)
 
 在 issues 里 New issue，选择 打个招呼 label, 提出人生第一个 issue
 
