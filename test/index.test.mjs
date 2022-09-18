@@ -14,21 +14,10 @@ describe('ci', () => {
     });
   });
 
-  it('txt document should increase', async () => {
+  it('should be a txt file.', async () => {
     const arr = await fg(['../*.txt']);
     arr.forEach(i => {
       expect(i.endsWith('.txt'));
-    });
-    const nums = arr
-      .map(i => {
-        const num = /(\d+)\.txt/.exec(i)?.[1];
-        expect(num).toBeDefined();
-        return parseInt(num);
-      })
-      .sort((a, b) => a - b);
-    nums.sort().reduce((prev, curr) => {
-      expect(curr).toBe(prev + 1);
-      return curr;
     });
   });
 
