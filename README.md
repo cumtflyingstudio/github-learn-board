@@ -3,7 +3,7 @@
 为成员们使用 github 进行学习的签到板。
 该仓库权限时 all，通过 issue 和 Pull Request 进行贡献
 
-## 使用方法：
+##  TODO:使用方法
 
 ### 1. 使用 issue
 
@@ -25,4 +25,4 @@ c. 第一个人新建 1.txt 并写入自己的名字，第二个人新建 2.txt 
 
 d. 之后 ci 后会自动 merge（正常情况下 项目 leader 的 review 再 merge）
 
-## 本仓库集成了 CI 和分支保护，按步骤的 pull request 会 auto merge
+## 本仓库集成了 CI 和分支保护，不要修改除txt之外的其他文件，按步骤的 pull request 会 auto merge
