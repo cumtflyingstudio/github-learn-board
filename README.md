@@ -11,17 +11,17 @@
 
 ![图片显示不出来，请开加速器，科学上网1](./imgs/%E6%80%BB%E7%AD%BE%E5%88%B0%E6%9D%BF.png)
 
-在 issues 里 New issue，选择 打个招呼 label, 提出人生第一个 issue
+在 issues 里 New issue，选择 打个招呼 label, 提出人生第一个 issue，最好附上个人信息，方便工作室之后的学弟学妹们浏览。
 
-在 issues 里 New issue，选择 签到 label，再提一个带其他tag的issue
+在 issues 里 New issue，选择 签到 label。
 
 ### 2. 使用 Pull Request，
 
-a. fork 分支
+a. fork 分支，之后git clone 到本地，可以使用Github Desktop（官方客户端，与VScode兼容性最好）
 
 b. 新建自己的 branch 分支，命名为 "dev\_你的名字"
 
-c. 第一个人新建 1.txt 并写入自己的名字，第二个人新建 2.txt 并写入自己名字，以此类推, 顺序递增，commit ，commit message 为 "feat: 9.txt"，数字为你的txt名字
+c. 新建文件 "自己的名字.txt"，写入自己的个人简介，（可以不用vscode，记事本也行！），commit ，commit message 为 "feat: 9.txt"，数字为你的txt名字
 
 d. 进入个人仓库，提人生第一个 pull Request
 
